@@ -81,6 +81,7 @@ import AdminHome from "./pages/AdminHome";
 import Checkout from "./pages/CheckOut";
 import ProtectedRoute from "./components/ProtectedRoute";
 import AddCategory from "./pages/AddCategory";
+import NotFound from "./components/NotFound";
 
 function Layout() {
   const location = useLocation();
@@ -117,6 +118,7 @@ function Layout() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/addCategory" element={<AddCategory />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
 
 
         </Routes>

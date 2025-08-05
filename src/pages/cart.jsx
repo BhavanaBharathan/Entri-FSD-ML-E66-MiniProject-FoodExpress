@@ -7,7 +7,7 @@ function Cart() {
   const { cart, removeFromCart, clearCart, updateQuantity, totalPrice } = useCart();
 
   if (cart.length === 0) {
-    return <h2 className="text-xl font-bold">Your cart is empty</h2>;
+    return <h2 className="bg-red-500 text-white font-bold px-4 py-2">Your cart is empty</h2>;
   }
 
   return (
