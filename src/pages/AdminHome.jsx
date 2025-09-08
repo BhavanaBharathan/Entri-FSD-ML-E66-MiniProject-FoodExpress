@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function AdminHome() {
   const [categoryName, setCategoryName] = useState("");
   const [categoryImage, setCategoryImage] = useState("");
-  const [categoryPrice, setCategoryPrice] = useState(""); // ✅ New state for price
+  const [categoryPrice, setCategoryPrice] = useState(""); //  New state for price
 
   const [restaurantName, setRestaurantName] = useState("");
   const [restaurantImage, setRestaurantImage] = useState("");
@@ -25,14 +25,14 @@ export default function AdminHome() {
       id: Date.now(),
       name: categoryName,
       image: categoryImage,
-      price: parseFloat(categoryPrice), // ✅ Store price
+      price: parseFloat(categoryPrice), // Store price
     });
     localStorage.setItem("categories", JSON.stringify(categories));
 
     alert("Category added!");
     setCategoryName("");
     setCategoryImage("");
-    setCategoryPrice(""); // ✅ Reset price
+    setCategoryPrice(""); // Reset price
   };
 
   const handleAddRestaurant = () => {
